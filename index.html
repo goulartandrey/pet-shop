@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Pet Friend</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><b>Pet Friend</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="pages/servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="pages/contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="align-self-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="text-white nav-link" href="pages/registre.html">Quero me cadastrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-white nav-link" href="pages/login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="badge rounded-pill bg-light text-danger position-absolute ms-3 mt-0"
+                                    title="5 produtos no carrinho"><small>0</small></span>
+                                <a href="#" class="nav-link text-white">
+                                    <i class="bi-cart" style="font-size: 24px;line-height:24px"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div id="carouselMain" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/dogs3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/dogs2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/dogs1.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <main class="flex-fill">
+            <div class="container">
+
+                <hr mt-3>
+
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <img src="img/racao2.jpg" alt="" class="card-img-top">
+                            <div class="card-header">
+                                R$3,75
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Titulo</h5>
+                                <p>Ração úmida sabor carne sachê - Pedigree
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-danger  mt-2 d-block">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <img src="img/racao.jpg" alt="" class="card-img-top">
+                            <div class="card-header">
+                                R$12,80
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Titulo</h5>
+                                <p>Ração úmida enlatada sabor carne - Pedigree
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-danger  mt-2 d-block">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <img src="img/racao3.jpg" alt="" class="card-img-top">
+                            <div class="card-header">
+                                R$24,90
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Titulo</h5>
+                                <p>Ração seca 1KG Raças Pequenas Pedigree
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-danger  mt-2 d-block">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <img src="img/racao4.jpg" alt="" class="card-img-top">
+                            <div class="card-header">
+                                R$19,75
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Titulo</h5>
+                                <p>Ração seca 1KG Adultos - Golden
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-danger  mt-2 d-block">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <img src="img/racao6.jpg" alt="" class="card-img-top">
+                            <div class="card-header">
+                                R$22,50
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Titulo</h5>
+                                <p>Ração seca 1KG Gato Adulto - Gran Plus
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-danger  mt-2 d-block">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light">
+                            <img src="img/racao5.jpg" alt="" class="card-img-top">
+                            <div class="card-header">
+                                R$27,99
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Titulo</h5>
+                                <p>Whiskas 1KG sabor carne
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-danger  mt-2 d-block">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-3">
+            </div>
+        </main>
+
+        <footer class="border-top text-muted bg-light">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 col-md-4 text-center">
+                        &copy;2024 - Goulart<br>
+                        Rua sape, 425<br>
+                        CNPJ:99.999.999-99
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        Horário de atendimento<br>
+                        Seg - Sex das 8h as 17h<br>
+                        Sábados das 8h as 12h
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        Contato:<br>
+                        (51)99999-5555<br>
+                        sac@petfriend.com
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+
+</html>
